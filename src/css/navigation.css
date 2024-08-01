@@ -1,0 +1,25 @@
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Обеспечивает, что элементы будут распределены по всей ширине */
+    background-color: #000000; /* Фон для навигации */
+    padding-bottom: 5vh;
+}
+
+.nav-item {
+    color: #ffffff; /* Цвет текста */
+    text-align: center; /* Центрирование текста */
+    text-decoration: none; /* Убирает подчеркивание */
+    font-size: 14px; /* Размер шрифта */
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение иконки и текста */
+    align-items: center; /* Центрирование элементов */
+}
+
+.nav-item img {
+    width: 24px; /* Ширина иконки */
+    height: 24px; /* Высота иконки */
+    margin-bottom: 5px; /* Отступ между иконкой и текстом */
+}
