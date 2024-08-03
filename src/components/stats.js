@@ -14,7 +14,8 @@ class Stats extends React.Component {
                     <span className="stats-header">Leaderboard</span>
                     <div className="user-stats-box">
                         <div className="username-and-burn-count-box">
-                            <div className="username">Babitovec</div>
+                            <div className="username">{this.props.username}</div>
+                            {/* не знаю рабоатет или нет выше */}
                             <div className="burn-count">5738 BURN</div>
                         </div>
                         <div className="user-rank">#256791</div>
