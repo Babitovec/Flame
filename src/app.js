@@ -37,7 +37,7 @@ class App extends React.Component {
         pageContent = <Frens />;
         break;
       case 'stats':
-        pageContent = <Stats />;
+        pageContent = <Stats username={this.state.username} />;
         break;
       default:
         pageContent = <Home username={this.state.username} />;
