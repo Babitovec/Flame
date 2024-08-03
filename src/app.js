@@ -5,6 +5,11 @@ import Frens from "./components/frens.js";
 import Stats from "./components/stats.js";
 import Navigation from "./components/navigation.js";
 
+const tg = window.Telegram.WebApp;
+
+tg.expand();
+tg.disableVerticalSwipes();
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -40,7 +45,7 @@ class App extends React.Component {
     return (
       <div>
         {pageContent}
-        <Navigation changePage={this.changePage} />
+        <Navigation changePage={this.changePage} currentPage={this.state.currentPage} />
       </div>
     );
   }
