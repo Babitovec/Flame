@@ -14,7 +14,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentPage: 'home'
+      currentPage: 'home',
+      username: tg.initDataUnsafe?.user?.username || 'Guest'
     };
     this.changePage = this.changePage.bind(this);
   }
@@ -27,7 +28,7 @@ class App extends React.Component {
     let pageContent;
     switch (this.state.currentPage) {
       case 'home':
-        pageContent = <Home />;
+        pageContent = <Home username={this.state.username} />;
         break;
       case 'tasks':
         pageContent = <Tasks />;
@@ -39,7 +40,7 @@ class App extends React.Component {
         pageContent = <Stats />;
         break;
       default:
-        pageContent = <Home />;
+        pageContent = <Home username={this.state.username} />;
     }
 
     return (
