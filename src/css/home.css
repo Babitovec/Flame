@@ -85,16 +85,16 @@
 }
 
 .chests-background {
-    width: 350px;
-    height: 160px;
+    width: 85vw;
+    height: 38.85vw;
     background-color: #f79351;
     border-radius: 25px;
     position: absolute;
 }
 
 .in-chests{
-    height: 160px;
-    width: 350px;
+    width: 85vw;
+    height: 38.85vw;
     z-index: 1;
     display: flex;
     justify-content: space-around;
