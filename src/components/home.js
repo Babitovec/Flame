@@ -26,7 +26,7 @@ class Home extends React.Component {
         
                 <div className="profile">
                     <img src={PFP} alt="PFP" className="profile-pic" />
-                    <div className="username">Babitovec</div>
+                    <div className="username">?</div>
                     <div className="score">
                     <img src={burn_logo} alt="burn" className="burn-logo-score" />
                     <span className="score-count">5738</span>
