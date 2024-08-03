@@ -78,8 +78,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5vh;
-    margin-bottom: 10vh;
     background-color: #f79351;
     border-radius: 25px;
 }
