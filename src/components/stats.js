@@ -3,14 +3,14 @@ import "../css/stats.css";
 import Navigation from "../components/navigation.js";
 
 // Images
-import cup_emoji_animated from "../img/cup-emoji-animated.gif";
+import crown_emoji_animated_compressed from "../img/crown_emoji_animated_compressed.gif"
 
 class Stats extends React.Component {
   render() {
     return (
       <div>
         <div className="container">
-          <img src={cup_emoji_animated} alt="cup_emoji_animated" className="cup-emoji-animated" />
+          <img src={crown_emoji_animated_compressed} alt="cronw_emoji_animated" className="crown-emoji-animated" />
           <span className="stats-header">Leaderboard</span>
           <div className="user-stats-box">
             <div className="username-and-burn-count-box">
