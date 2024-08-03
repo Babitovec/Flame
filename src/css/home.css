@@ -50,9 +50,7 @@
     margin-bottom: 10px;
 }
 
-
-//тест рабоатет или нет
-.profile .username {
+.username {
     color: #FFE9A5;
     font-size: 24px;
     font-weight: bold;
