@@ -43,7 +43,7 @@ class Tasks extends React.Component {
                     <div className="subscription">
                         <img src={flame_emoji} alt="flame_emoji" className="icon" />
                         <div className="text">
-                            <div className="title">Add ️‍🔥 in Telegram name</div>
+                            <div className="title">Add 🔥 in Telegram name</div>
                             <div className="points">+100 Flame</div>
                         </div>
                         <div className="open-button">
