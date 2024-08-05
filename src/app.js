@@ -25,12 +25,10 @@ class App extends React.Component {
   }
 
   render() {
-    const { currentPage, username } = this.state;
-
     let pageContent;
-    switch (currentPage) {
+    switch (this.state.currentPage) {
       case 'home':
-        pageContent = <Home username={username} />;
+        pageContent = <Home username={this.state.username} />;
         break;
       case 'tasks':
         pageContent = <Tasks />;
@@ -39,17 +37,16 @@ class App extends React.Component {
         pageContent = <Frens />;
         break;
       case 'stats':
-        pageContent = <Stats username={username} />;
+        pageContent = <Stats username={this.state.username} />;
         break;
       default:
-        pageContent = <Home username={username} />;
+        pageContent = <Home username={this.state.username} />;
     }
 
     return (
-            <div>
-              {pageContent}
-            </div>
-        <Navigation changePage={this.changePage} currentPage={currentPage} />
+      <div>
+        {pageContent}
+        <Navigation changePage={this.changePage} currentPage={this.state.currentPage} />
       </div>
     );
   }
