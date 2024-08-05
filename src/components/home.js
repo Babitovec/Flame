@@ -5,7 +5,7 @@ import "../css/home.css";
 import background_filled_colour from '../img/score_background_430x70_without_fade.png';
 import burn_emoji_animated from '../img/burn_emoji_animated.gif';
 import PFP from '../img/PFP.gif';
-import burn_logo from '../img/Burn-logo.png';
+import flame_emoji from "../img/flame_emoji.png"
 import tg_background from '../img/tg_background.png';
 import gift_emoji_animated from '../img/gift_emoji_animated.gif';
 
@@ -26,7 +26,7 @@ class Home extends React.Component {
             <img src={PFP} alt="PFP" className="profile-pic" />
             <div className="username">{this.props.username}</div>
             <div className="score">
-              <img src={burn_logo} alt="burn" className="burn-logo-score" />
+              <img src={flame_emoji} alt="burn" className="flame-logo-score" />
               <span className="score-count">5738</span>
             </div>
           </div>
