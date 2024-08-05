@@ -49,8 +49,6 @@ class App extends React.Component {
             <div>
               {pageContent}
             </div>
-          </CSSTransition>
-        </TransitionGroup>
         <Navigation changePage={this.changePage} currentPage={currentPage} />
       </div>
     );
