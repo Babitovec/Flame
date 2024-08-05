@@ -22,7 +22,7 @@ class Frens extends React.Component {
                         <div className="claim">Claim</div>
                     </div>
                 </div>
-                <div className="frens-discription">Score 10% from friend and recive a gift</div>
+                <div className="frens-discription">Score 10% for each friend + 🎁</div>
                 <div className="frens-count">3 Friends</div>
 
                 <div className="frens-invited-container">
