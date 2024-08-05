@@ -1,5 +1,4 @@
 import React from "react";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Home from "./components/home.js";
 import Tasks from "./components/tasks.js";
 import Frens from "./components/frens.js";
@@ -47,13 +46,6 @@ class App extends React.Component {
     }
 
     return (
-      <div>
-        <TransitionGroup>
-          <CSSTransition
-            key={currentPage}
-            classNames="fade"
-            timeout={300}
-          >
             <div>
               {pageContent}
             </div>
