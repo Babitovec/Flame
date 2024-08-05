@@ -4,7 +4,7 @@ import Navigation from "../components/navigation.js";
 
 // Images
 import masks_animated from '../img/masks_animated.gif';
-import Burn_logo_v2 from "../img/Burn-logo-v2.png";
+import flame_emoji from "../img/flame_emoji.png"
  
 class Frens extends React.Component {
     render() {
@@ -12,17 +12,17 @@ class Frens extends React.Component {
         <div>
             <div className="container">
                 <img src={masks_animated} alt="masks_animated" className="masks-emoji-animated" />
-                <span className="frens-header">Invite Friends<br />and get more BURN</span>
+                <span className="frens-header">Invite Friends<br />and get more Flame</span>
                 <div className="claim-frens">
                     <div className="claimable-burn">
-                        <img src={Burn_logo_v2} alt="burn_logo" className="burn-logo-claim" />
+                        <img src={flame_emoji} alt="burn_logo" className="burn-logo-claim" />
                         <div className="claimable-burn-count">156</div>
                     </div>
                     <div className="claim-button">
                         <div className="claim">Claim</div>
                     </div>
                 </div>
-                <div className="frens-discription">Score 10% from buddies + 2.5% from their referrals</div>
+                <div className="frens-discription">Score 10% from friend and recive a gift</div>
                 <div className="frens-count">3 Friends</div>
 
                 <div className="frens-invited-container">
@@ -34,7 +34,7 @@ class Frens extends React.Component {
                             </div>
                             <div className="fren-total-earned-container">
                                 <div className="fren-total-earned">4679</div>
-                                <img src={Burn_logo_v2} alt="burn_logo" className="burn-logo-claim" />
+                                <img src={flame_emoji} alt="burn_logo" className="burn-logo-claim" />
                             </div>
                         </div>
                     </div>
@@ -47,7 +47,7 @@ class Frens extends React.Component {
                             </div>
                             <div className="fren-total-earned-container">
                                 <div className="fren-total-earned">3201</div>
-                                <img src={Burn_logo_v2} alt="burn_logo" className="burn-logo-claim" />
+                                <img src={flame_emoji} alt="burn_logo" className="burn-logo-claim" />
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@ class Frens extends React.Component {
                             </div>
                             <div className="fren-total-earned-container">
                                 <div className="fren-total-earned">2172</div>
-                                <img src={Burn_logo_v2} alt="burn_logo" className="burn-logo-claim" />
+                                <img src={flame_emoji} alt="burn_logo" className="burn-logo-claim" />
                             </div>
                         </div>
                     </div>
