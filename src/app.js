@@ -1,4 +1,5 @@
 import React from "react";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Home from "./components/home.js";
 import Tasks from "./components/tasks.js";
 import Frens from "./components/frens.js";
@@ -25,10 +26,12 @@ class App extends React.Component {
   }
 
   render() {
+    const { currentPage, username } = this.state;
+
     let pageContent;
-    switch (this.state.currentPage) {
+    switch (currentPage) {
       case 'home':
-        pageContent = <Home username={this.state.username} />;
+        pageContent = <Home username={username} />;
         break;
       case 'tasks':
         pageContent = <Tasks />;
@@ -37,16 +40,26 @@ class App extends React.Component {
         pageContent = <Frens />;
         break;
       case 'stats':
-        pageContent = <Stats username={this.state.username} />;
+        pageContent = <Stats username={username} />;
         break;
       default:
-        pageContent = <Home username={this.state.username} />;
+        pageContent = <Home username={username} />;
     }
 
     return (
       <div>
-        {pageContent}
-        <Navigation changePage={this.changePage} currentPage={this.state.currentPage} />
+        <TransitionGroup>
+          <CSSTransition
+            key={currentPage}
+            classNames="fade"
+            timeout={300}
+          >
+            <div>
+              {pageContent}
+            </div>
+          </CSSTransition>
+        </TransitionGroup>
+        <Navigation changePage={this.changePage} currentPage={currentPage} />
       </div>
     );
   }
