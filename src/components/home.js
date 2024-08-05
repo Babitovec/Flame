@@ -2,7 +2,7 @@ import React from "react";
 import "../css/home.css";
 
 // Images
-import background_filled_colour from '../img/score_background_fade_updated.png';
+import background_filled_colour from '../img/score_background_430x70_without_fade.png';
 import burn_emoji_animated from '../img/burn_emoji_animated.gif';
 import PFP from '../img/PFP.gif';
 import burn_logo from '../img/Burn-logo.png';
