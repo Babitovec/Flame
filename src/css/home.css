@@ -4,10 +4,12 @@
 }
 
 .score-background {
-    height: 10.75vh;
+    height: 7.5vh;
     width: 100%;
     position: absolute;
     opacity: 50%;
+    /* border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%; */
 }
 
 .score-stats-box {
